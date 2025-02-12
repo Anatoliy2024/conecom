@@ -1,0 +1,4 @@
+#  Игнорируем папки Webpack
+/node_modules/
+/dist/
+
