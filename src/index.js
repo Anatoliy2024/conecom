@@ -80,24 +80,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document
           .querySelectorAll(".content-slider")
           .forEach((slider, index) => {
-            // const nextButton = slider.querySelector(".swiper-button-next")
-            // const prevButton = slider.querySelector(".swiper-button-prev")
-            // const pagination = slider.querySelector(".swiper-pagination")
-
-            // if (!nextButton || !prevButton || !pagination) {
-            //   console.warn(
-            //     "Навигационные элементы отсутствуют в слайдере",
-            //     slider
-            //   )
-            //   return
-            // }
             const swiper = new Swiper(slider, {
               modules: [Navigation, Pagination],
               loop: true,
               breakpoints: {
                 0: { slidesPerView: 1, spaceBetween: 0 },
                 400: { slidesPerView: 2, spaceBetween: 10 },
-                700: { slidesPerView: 2, spaceBetween: 20 },
+                700: { slidesPerView: 2, spaceBetween: 25 },
               },
               pagination: {
                 el: `.swiper-pagination${index + 1}`,
